@@ -19,7 +19,7 @@ Things you may want to cover:
 |name|string|null: false, unique:true|
 |email|string|null: false, unique: true|
 |password|string|null: false|
-|group_id|integer|null: false, foreign_key: true|
+
 
 ### Association
 - has_many :group_users
@@ -30,7 +30,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |group_name|string|null: false, unique: true|
-|user_id|integer|null: false, foreign_key: true|
+
 
 ### Association
 - has_many :group_users
