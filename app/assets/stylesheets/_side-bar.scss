@@ -1,0 +1,51 @@
+.side-bar{
+  width: 300px;
+  .side-bar_user-name{
+    height: 100px;
+    background-color: #253141;
+    display: flex;
+    align-items: center;
+    .top-item{
+      padding-left: 20px;
+      width: 280px;
+      height: 20px;
+      display: flex;
+      justify-content: space-between;
+      .top-item_name{
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: bold;
+      }
+      .top-item_icon-list{
+        width: 60px;
+        display: flex;
+        justify-content: flex-end;
+        .top-item_icon1{
+          color: #ffffff;
+        }
+        .top-item_icon2{
+          color: #ffffff;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+  .side-bar_group-list{
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    .side-bar_group{
+      padding: 20px 20px 40px 20px;
+      color: #ffffff;
+      font-weight: bold;
+      .side-bar_group-name{
+        font-size: 15px;
+      }
+      .side-bar_group-message{
+        font-size: 11px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+
