@@ -1,29 +1,29 @@
 .chat-main{
   width: calc( 100vw - 300px );
-  .chat-main_group-info{
+  &_group-info{
     height: 100px;
     background-color: #ffffff;
     border-bottom: 1px solid #eeeeee;
     display: flex;
     justify-content: space-between;
-    .chat-main_group-info_group{
+    &_group{
       padding-left: 40px;
-      .chat-main_group-info_group-name{
+      &_group-name{
         color: #333333;
         font-size: 20px;
         padding-top: 35px;
       }
-      .chat-main_group-info_group-memberlist{
+      &_group-memberlist{
         color: #999999;
         font-size: 12px;
         padding-top: 15px;
         display: flex;
-        .chat-main_group-info_group-memberlist_member{
+        &_member{
           padding-left: 5px;
         }
       }
     }
-    .chat-main_group-info_group-edit{
+    &_group-edit{
       height: 40px;
       width: 72px;
       color: #38aef0;
@@ -35,59 +35,59 @@
       text-decoration: none;
     }
   }
-  .chat-main_message-list{
+  &_message-list{
     height: calc( 100vh - 100px - 90px );
     background-color: #fafafa;
     padding: 35px 0 0 40px;
-    .chat-main_message-list_message-box{
+    &_message-box{
       margin-bottom: 46px;
-      .chat-main_message-list_message-box_group-info{
+      &_group-info{
         margin-bottom: 12px;
         display: flex;
-        .chat-main_message-list_message-box_group-info_name{
+        &_name{
           color: #333333;
           font-size: 16px;
         }
-        .chat-main_message-list_message-box_group-info_date{
+        &_date{
           color: #999999;
           font-size: 12px;
           padding-left: 10px;
         }
       }
-      .chat-main_message-list_message-box_group-message{
+      &_group-message{
         color: #434a54;
       }
     }
   }
-  .chat-main_message-form{
+  &_message-form{
     height: 90px;
     background-color: #d2d2d2;
     padding: 0px 40px 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .chat-main_message-form_content{
+    &_content{
       height: 50px;
       width: 100%;
       background-color: #fff;
       position: relative;
-      .chat-main_message-form_content_message{
+      &_message{
         height: 50px;
         padding: 0 45px 0 10px;
         width: 100%;
         border: none;
       }
-      .chat-main_message-form_content_image{
+      &_image{
         line-height: 50px;
         font-size: 25px;
         position: absolute;
         right: 10px;
-        .chat-main_message-form_content_image_btn-hidden{
+        &_btn-hidden{
           display: none;
         }
       }
     }
-    .chat-main_message-form_send-btn{
+    &_send-btn{
       color: #fff;
       font-size: 16px;
       height: 50px;
