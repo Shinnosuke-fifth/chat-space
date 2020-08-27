@@ -1,0 +1,39 @@
+.chat-main
+  .chat-main_group-info
+    .chat-main_group-info_group
+      .chat-main_group-info_group_group-name
+        test
+      %ul.chat-main_group-info_group_group-memberlist
+        Member : 
+        %li.chat-main_group-info_group_group-memberlist_member
+          masa
+        %li.chat-main_group-info_group_group-memberlist_member
+          yoshi
+    = link_to "#", class: "chat-main_group-info_group-edit" do
+      Edit
+  .chat-main_message-list
+    .chat-main_message-list_message-box
+      .chat-main_message-list_message-box_group-info
+        .chat-main_message-list_message-box_group-info_name
+          yoshi
+        .chat-main_message-list_message-box_group-info_date
+          2020/7/7(Wed) 24:01:45
+      .chat-main_message-list_message-box_group-message
+        こんばんは
+    .chat-main_message-list_message-box
+      .chat-main_message-list_message-box_group-info
+        .chat-main_message-list_message-box_group-info_name
+          masa
+        .chat-main_message-list_message-box_group-info_date
+          2020/7/7(Wed) 24:12:45
+      .chat-main_message-list_message-box_group-message
+        どうも！
+  .chat-main_message-form
+    .chat-main_message-form_content
+      %form
+        %input{type: "text",placeholder: "type a message",class: "chat-main_message-form_content_message"}
+        %label{class: "chat-main_message-form_content_image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "chat-main_message-form_content_image_btn-hidden"}
+    %form
+      %input{type: "submit",value: "send",class: "chat-main_message-form_send-btn"}
